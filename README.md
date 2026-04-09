@@ -1,4 +1,4 @@
-# jpa02-hudinid
+# jpa02-Hudinid
 
 Repo: https://github.com/ucsb-cs156-s26/jpa02-Hudinid
 
