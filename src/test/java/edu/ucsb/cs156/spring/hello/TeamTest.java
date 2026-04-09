@@ -27,17 +27,25 @@ public class TeamTest {
 
     @Test
     public void equals_returns_correct_boolean() {
-        assertEquals(true, team.equals(team));
+        Team t1 = team;
+        assertEquals(true, team.equals(t1));
+
+        int[] testArr = new int[5];
+        
+
+
         Team t2 = new Team();
         Team t3 = new Team("test-team");
         
-        int[] testArr = new int[5];
         assertEquals(false, team.equals(t2));
+        assertEquals(true, t3.equals(team));
+        
         
         assertEquals(false, team.equals(testArr));
         t3.addMember("testName1");
         t2.addMember("testName1");
         assertEquals(false, t2.equals(t3));
+        assertEquals(false, t3.equals(team));
     }
 
     @Test
